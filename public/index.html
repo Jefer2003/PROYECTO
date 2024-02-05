@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+<head>
+  <title>Registro de Motos</title>
+</head>
+<body>
+  <h1>REGISTRO DE CAMBIO DE ACEITES</h1>
+  <form id="registro">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre"><br>
+    <label for="moto">Nombre de la moto:</label><br>
+    <input type="text" id="moto" name="moto"><br>
+    <label for="fecha">Fecha:</label><br>
+    <input type="date" id="fecha" name="fecha"><br>
+    <label for="kilometraje">Kilometraje:</label><br>
+    <input type="number" id="kilometraje" name="kilometraje"><br>
+    <input type="submit" value="Registrar">
+  </form>
+  <button id="mostrarRegistros">MOSTRAR USUARIOS REGISTRADOS</button>
+  <button id="registrar" style="display: none;">IR A REGISTRAR</button>
+  <table id="tablaRegistros" style="display: none;">
+    <tr>
+      <th>Nombre</th>
+      <th>Nombre de la moto</th>
+      <th>Fecha</th>
+      <th>Kilometraje</th>
+    </tr>
+  </table>
+  <div id="mensaje" style="display: none;"></div>
+  <script src="main.js"></script>
+</body>
+</html>
